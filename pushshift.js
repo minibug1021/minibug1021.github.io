@@ -3,6 +3,7 @@ function getMostRecent(){
 		date = data["data"][0]["utc_datetime_str"];
 		document.getElementById("date").innerHTML = date;
 		document.title = document.title + ", " + date;
+		updateOverride();
 	});
 }
 
@@ -14,4 +15,4 @@ function updateOverride(){
 	});
 }
 
-updateOverride();
+getMostRecent();
